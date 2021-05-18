@@ -3,5 +3,5 @@
 Template/bin
 Template/obj
 
-Template/bin/*
-Template/obj/*
+Template/bin/Debug
+Template/obj/Debug
