@@ -1,0 +1,7 @@
+.idea
+
+Template/bin
+Template/obj
+
+Template/bin/*
+Template/obj/*

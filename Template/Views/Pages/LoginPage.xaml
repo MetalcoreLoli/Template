@@ -1,0 +1,36 @@
+﻿<Page x:Class="Template.Views.Pages.LoginPage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+      xmlns:local="clr-namespace:Template.Views.Pages"
+      xmlns:vm="clr-namespace:Template.ViewModels"
+      mc:Ignorable="d"
+      Background="Transparent"
+      Title="LoginPage" Height="450" Width="800">
+    
+    <Page.DataContext>
+       <vm:LoginPageViewModel x:Name="loginVM"/> 
+    </Page.DataContext>
+    
+    <Grid>
+        <StackPanel
+            VerticalAlignment="Center"
+            HorizontalAlignment="Center">
+            <Label
+                VerticalContentAlignment="Center"
+                HorizontalContentAlignment="Center"
+                Content="Sing In"
+                Style="{StaticResource SignInLabelStyle}"
+                />
+            <TextBox
+                Tag="{Binding LoginLabelText}"/>
+            <PasswordBox
+                Tag="{Binding PasswordLabelText}"/>
+            <Grid>
+                <Button
+                    Content="{Binding EnterButtonText}"/>
+            </Grid>
+        </StackPanel>
+    </Grid>
+</Page>
